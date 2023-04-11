@@ -36,3 +36,13 @@ function createTaskListItem(taskText) {
 
   return listItem;
 }
+// script.js
+// ... existing code ...
+
+// Hamburger menu
+const hamburger = document.getElementById('hamburger');
+const navList = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+  navList.classList.toggle('show');
+});

@@ -61,7 +61,6 @@ li {
   display: flex;
   align-items: center;
   padding: 0.5rem 0;
-  border-bottom: 1px solid #f0f0f0;
   gap: 0.5rem;
 }
 
@@ -125,5 +124,150 @@ input[type=checkbox]:before {
 @media (min-width: 768px) and (max-width: 1024px) {
   .container {
     width: 70%;
+
+  }
+  #about{
+   
+    margin-top: 35%;
   }
 }
+/* styles.css */
+/* ... existing styles ... */
+
+/* Navbar styles */
+nav {
+  background-color: #3f51b5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+}
+
+nav a {
+  margin-right: 40px;
+  color: white;
+  padding: 0.5rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* About section styles */
+#about {
+  font-size: 14px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 24%;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  /* ... existing styles ... */
+
+  .nav-container {
+    flex-direction: row-reverse;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 0.5rem;
+  }
+}
+
+/* styles.css */
+/* ... existing styles ... */
+
+/* Hamburger menu styles */
+.hamburger {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+nav ul.show {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #3f51b5;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+nav ul.show a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.responsive-image {
+  margin-top: -24%;
+  width: 34%;
+  height: auto;
+  max-width: 87%;
+}
+.image {
+  margin-top: -24%;
+    width: 107%;
+    height: auto;
+    max-width: 100%;
+}
+/* Responsive styles */
+@media (max-width: 767px) {
+  /* ... existing styles ... */
+
+  .hamburger {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    display: none;
+  }
+  #about{
+   
+    margin-top: 35%;
+  }
+  .responsive-image {
+    margin-top: 93%;
+    width: 100%;}
+}
+/* styles.css */
+/* ... existing styles ... */
+
+
+
